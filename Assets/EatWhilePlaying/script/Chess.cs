@@ -66,6 +66,7 @@ public class Chess:Battle{
 		nguiBc=Instantiate(nguiBcPrefab) as NguiButton;
 		nguiBc.name=nguiBcPrefab.name;
 		nguiBc.chess=this;
+		// nguiBc.transform.parent=nguiBcPrefab.transform;
 		var na=GetComponent<NguiAnchor>();
 		na.ngui=nguiBc.transform;
 		c=GetComponent<Creature>();

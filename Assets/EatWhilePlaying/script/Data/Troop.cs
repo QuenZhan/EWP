@@ -60,9 +60,9 @@ public class Troop{
 		var dd=1;
 		Vector3 vec;
 		switch(party){
-		case"host":vec=new Vector3(paddingH,640-paddingV,0);break;
+		case"host":vec=new Vector3(paddingH,Screen.height-paddingV,0);break;
 		default:
-			vec=new Vector3(760-paddingH,640-paddingV,0);
+			vec=new Vector3(Screen.width-paddingH,Screen.height-paddingV,0);
 			dd=-1;
 			break;
 		}
